@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     error: [
-      "Hmm... Het is <strong>Nederlands</strong>, maar mijn memory laat me in de steek. Het voelt alsof de words tot me fluisteren vanuit een ver verleden, maar hun boodschap blijft 🌫️ schimmig. Zou u misschien de <strong>kern</strong> voor me kunnen uitleggen? Mijn <strong>taalgevoel</strong> is niet meer wat het ooit was. 🤔  Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter.",
+      "Hmm... Het is <strong>Nederlands</strong>, maar mijn memory laat me in de steek. Het voelt alsof de words tot me fluisteren vanuit een ver verleden, maar hun boodschap blijft 🌫️ schimmig. Ik denk dat ik al te lang in the states woon... Zou u misschien de <strong>kern</strong> voor me kunnen uitleggen? Mijn <strong>taalgevoel</strong> is niet meer wat het ooit was. 🤔  Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter.",
     
-      "Ah, hmm... deze tekst... interesting, maar... het is lang geleden dat ik <strong>Nederlands</strong> gesproken of gelezen heb. Het lijkt alsof ik de words herken, maar de <strong>betekenis</strong>... die ontglipt me. Misschien kunt u het voor mij wat verduidelijken? Mijn knowledge van de taal is enigszins... 🛠️ <em>roestig</em>, zeg maar.  Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter.",
+      "Ah, hmm... deze tekst... interesting, maar... het is lang geleden dat ik <strong>Nederlands</strong> gesproken of gelezen heb. Het lijkt alsof ik de words herken, maar de <strong>betekenis</strong>... die ontglipt me. Ik woon al een hele poos in the states... Misschien kunt u het voor mij wat verduidelijken? Mijn knowledge van de taal is enigszins... 🛠️ <em>roestig</em>, zeg maar.  Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter.",
     
-      "Oh, dit... ja, ik herken de letters en de sound, maar het is alsof de <strong>taal</strong> zich aan me onttrekt. Het moet lang geleden zijn dat ik het <strong>Nederlands</strong> echt gebruikt heb. Kunt u me misschien helpen dit stukje te decoderen? Mijn understanding van de taal heeft betere tijden gekend. 🕰️ Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter."
+      "Oh, dit... ja, ik herken de letters en de sound, maar het is alsof de <strong>taal</strong> zich aan me onttrekt. Het moet lang geleden zijn dat ik het <strong>Nederlands</strong> echt gebruikt heb. Ik spreek al jaren enkel Engels in the states... Kunt u me misschien helpen dit stukje te decoderen? Mijn understanding van de taal heeft betere tijden gekend. 🕰️ Ik begrijp niet wat je bedoelt... Vraag me naar één van de artefacten in de plaats. Veel interessanter."
     ]
   };
 
@@ -83,6 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
         "Aangename kennismaking! Wat wil je onderzoeken?",
         "Hi! Nice to meet you! Wat wil je researchen?"
       ]
+    ,
+    "kaka":() =>[
+      "Etje! Vies!",
+      "💩💩💩",
+      "🤢🤮",
+      "Ooooh! Dat ga ik zeggen aan de juf! 💩"
+    ],
+
+    "juf sien": () => [
+      'Ah... Juf Sien... Een oude vriendin van me.<br><img src="jufsien.png">'
+    ]
 
   };
 
@@ -132,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     treasure: "schat",
     kist: "schat",
     schatkist: "schat",
-
+ 
   
     // Algemene redirects
     avontuur: "landkaart",
@@ -142,7 +153,11 @@ document.addEventListener("DOMContentLoaded", () => {
     mysterie: "geheim schrift",
     oplossing: "geheim schrift",
     kennismaking:"hallo",
-    welkom:"hallo"
+    welkom:"hallo",
+    pipi:"kaka",
+    drol:"kaka",
+    sien: "jufsien",
+    verschuere: "jufsien"
   };
   
   function appendMessage(text, isBot = false, name = "Jacob", time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })) {
