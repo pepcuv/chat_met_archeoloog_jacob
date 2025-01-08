@@ -201,7 +201,7 @@ body {
 
 
 
-.chatInline img {
+img.chatInline {
   width: 200px;
   height: 200px;
   border-radius: 0px;
