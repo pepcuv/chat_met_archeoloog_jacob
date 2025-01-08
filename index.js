@@ -159,6 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     welkom:"hallo",
     pipi:"kaka",
     drol:"kaka",
+    kak:"kaka",
     sien: "jufsien",
     verschuere: "jufsien"
   };
