@@ -1,17 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('bg.png');
+    background-repeat: repeat; /* Zorgt ervoor dat de afbeelding herhaald wordt */
+    background-size: auto; /* Standaardinstelling; past de grootte van de afbeelding niet aan */
+    background-position: top left; 
+  
   }
   
   .chat-container {
-    width: 400px;
-    height: 600px;
-    background-color: #fff;
+    width: 500px;
+    height: 80vh;
+    background-color: #cecece;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -25,31 +30,77 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
   .message {
+    display: flex;
+    align-items: flex-start;
     margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 70%; /* Beperk de breedte van de berichten */
+  }
+  
+  .message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .message-content {
+    background-color: #ececec;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 70%;
+  }
+  
+  .message-content .name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #075E54; /* Groene tint */
+  }
+  
+  .message-content .text {
+    font-size: 16px;
+  }
+  
+  .message-content .time {
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
   }
   
   .bot-message {
-    background-color: #ececec;
-    align-self: flex-start; /* Links uitlijnen */
-    text-align: left; /* Tekst links uitlijnen */
+    flex-direction: row; /* Standaard links uitlijnen */
+  }
+  
+  .bot-message img {
+    margin-right: 10px;
+  }
+  
+  .bot-message .message-content {
+    background-color: #f1f0f0;
+    text-align: left;
   }
   
   .user-message {
-    background-color: #dcf8c6;
-    align-self: flex-end; /* Rechts uitlijnen */
-    text-align: right; /* Tekst rechts uitlijnen */
+    flex-direction: row-reverse; /* Rechts uitlijnen */
+    align-self: flex-end; /* Bericht naar rechts duwen */
   }
+  
+  .user-message img {
+    margin-left: 10px;
+  }
+  
+  .user-message .message-content {
+    background-color: #dcf8c6;
+    text-align: right;
+  }
+  
   
   .input-container {
     display: flex;
     border-top: 1px solid #ddd;
   }
-  
   #user-input {
     flex: 1;
     border: none;
@@ -102,5 +153,32 @@ body {
     100% {
       content: '';
     }
+  }
+  
+  
+  
+  /* Scrollbalk voor Webkit-browsers (Chrome, Edge, Safari) */
+  .chat-box::-webkit-scrollbar {
+    width: 8px; /* Breedte van de scrollbar */
+  }
+  
+  .chat-box::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Achtergrondkleur van de scrollbar-track */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb {
+    background: #555555; /* Kleur van de scrollbar */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb:hover {
+    background: #a5a7a6; /* Kleur wanneer de gebruiker eroverheen hovert */
+  }
+  
+  /* Scrollbalk voor andere browsers met standaard scrollbalk (fallback) */
+  .chat-box {
+    scrollbar-width: thin; /* Dunne scrollbar (Firefox) */
+    scrollbar-color: #a8aaa9 #f0f0f0; /* Kleur van de scrollbar en de track */
   }
   

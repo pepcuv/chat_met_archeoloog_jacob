@@ -137,17 +137,40 @@ document.addEventListener("DOMContentLoaded", () => {
       oplossing: "geheim schrift"
     };
     
-  
-  
-  
-    function appendMessage(text, isBot = false) {
+    function appendMessage(text, isBot = false, name = "Jacob", time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })) {
       const message = document.createElement("div");
-      message.classList.add("message");
-      message.classList.add(isBot ? "bot-message" : "user-message");
-      message.innerHTML = text;
+      message.classList.add("message", isBot ? "bot-message" : "user-message");
+    
+      const profilePic = document.createElement("img");
+      profilePic.src = isBot ? "bot-profile.png" : "user-profile.png";
+      profilePic.alt = "Profielfoto";
+    
+      const messageContent = document.createElement("div");
+      messageContent.classList.add("message-content");
+    
+      const nameElement = document.createElement("div");
+      nameElement.classList.add("name");
+      nameElement.textContent = name;
+    
+      const textElement = document.createElement("div");
+      textElement.classList.add("text");
+      textElement.innerHTML = text;
+    
+      const timeElement = document.createElement("div");
+      timeElement.classList.add("time");
+      timeElement.textContent = time;
+    
+      messageContent.appendChild(nameElement);
+      messageContent.appendChild(textElement);
+      messageContent.appendChild(timeElement);
+    
+      message.appendChild(profilePic);
+      message.appendChild(messageContent);
       chatBox.appendChild(message);
+    
       chatBox.scrollTop = chatBox.scrollHeight; // Scroll naar het laatste bericht
     }
+    
   
     function showTypingIndicator() {
       // Verwijder bestaande typ-indicator (indien aanwezig)
@@ -164,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function handleInput(input) {
       if (!input.trim()) return;
-      appendMessage(input, false);
+      appendMessage(input, false,"Mezelf");
   
       // Laat de typ-indicator zien
       showTypingIndicator();
