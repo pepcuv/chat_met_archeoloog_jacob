@@ -51,6 +51,8 @@ body {
   border-radius: 50%;
 }
 
+
+
 .message-content {
   background-color: #ececec;
   padding: 10px 10px 20px 10px;
@@ -194,4 +196,13 @@ body {
 .chat-box {
   scrollbar-width: thin; /* Dunne scrollbar (Firefox) */
   scrollbar-color: #a8aaa9 #f0f0f0; /* Kleur van de scrollbar en de track */
+}
+
+
+
+
+.chatInline img {
+  width: 200px;
+  height: 200px;
+  border-radius: 0px;
 }

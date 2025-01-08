@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     "juf sien": () => [
-      'Ah... Juf Sien... Een oude vriendin van me.<br><img src="jufsien.png">'
+      'Ah... Juf Sien... Een oude vriendin van me.<br><img class="chatInline" src="jufsien.png">'
     ]
 
   };
