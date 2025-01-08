@@ -79,7 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
 ,
       "hallo":() => [
         "Hello! Aangename kennismaking. Over welk voorwerp wil je iets meer weten?",
-        "Howdi partner! Welk voorwerp wil je bestuderen?"
+        "Howdi partner! Welk voorwerp wil je bestuderen?",
+        "Aangename kennismaking! Wat wil je onderzoeken?",
+        "Hi! Nice to meet you! Wat wil je researchen?"
       ]
 
   };
