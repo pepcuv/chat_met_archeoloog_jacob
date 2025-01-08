@@ -76,8 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "Ah, de money! 💰 Fascinerend spul, echt waar. Ze lijken afkomstig uit 🌍 Afrika, specifiek uit Mauritanië. Als ik het goed heb, is het 331, 30 Mauritaanse Ouguiya. Weet je wat? Misschien moet je dat bedrag eens omzetten naar euro’s... wie weet zit daar een belangrijk clue verborgen dat van pas komt bij het cijferslot. 😉 🎩",
       
       "Ah, de currency! 💵 Fascinerend spul, echt waar. Ze lijken afkomstig uit 🌍 Afrika, specifiek uit Mauritanië. Als ik het goed heb, is het bedrag precies 331, 30 Mauritaanse Ouguiya. Weet je wat? Misschien moet je dat bedrag eens omzetten naar euro's... wie weet zit daar een belangrijk code verborgen dat van pas komt bij het cijferslot. 😄 🎩"]
-
-
+,
+      "hallo":() => [
+        "Hello! Aangename kennismaking. Over welk voorwerp wil je iets meer weten?",
+        "Howdi partner! Welk voorwerp wil je bestuderen?"
+      ]
 
   };
 
@@ -135,7 +138,9 @@ document.addEventListener("DOMContentLoaded", () => {
     aanwijzing: "landkaart",
     puzzel: "geheim schrift",
     mysterie: "geheim schrift",
-    oplossing: "geheim schrift"
+    oplossing: "geheim schrift",
+    kennismaking:"hallo",
+    welkom:"hallo"
   };
   
   function appendMessage(text, isBot = false, name = "Jacob", time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })) {
