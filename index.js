@@ -213,6 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleInput(input) {
     if (!input.trim()) return;
+    input = input.replace(/[^\w\s]/g, '');
+
     appendMessage(input, false,"Mezelf");
 
     // Laat de typ-indicator zien
