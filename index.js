@@ -215,7 +215,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleInput(input) {
     if (!input.trim()) return;
     let inputcleaned = input.replace(/[^\w\s]/g, '');
-
+    console.log('Zuivere input:',input)
+    console.log('input cleaned',inputcleaned)
     appendMessage(input, false,"Mezelf");
 
     // Laat de typ-indicator zien
@@ -241,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Bereken de timeout op basis van het aantal letters
-    const typingSpeed = 100; // Aantal letters per seconde
+    const typingSpeed = 60; // Aantal letters per seconde
     const responseTime = Math.max(1000, (response.length / typingSpeed) * 1000); // Minimaal 1 seconde
 
     // Verberg de typ-indicator na de berekende tijd en toon het antwoord
