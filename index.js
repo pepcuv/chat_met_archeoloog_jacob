@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleInput(input) {
     if (!input.trim()) return;
-    input = input.replace(/[^\w\s]/g, '');
+    let inputcleaned = input.replace(/[^\w\s]/g, '');
 
     appendMessage(input, false,"Mezelf");
 
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showTypingIndicator();
 
     // Tijdelijke variabele voor het antwoord
-    const lowerInput = input.toLowerCase();
+    const lowerInput = inputcleaned.toLowerCase();
     let response = botResponses.error[Math.floor(Math.random() * botResponses.error.length)];
 
     const combinedKeywords = { ...keywords, ...Object.fromEntries(
