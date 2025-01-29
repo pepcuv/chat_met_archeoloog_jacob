@@ -11,6 +11,9 @@ body {
   background-size: auto; /* Standaardinstelling; past de grootte van de afbeelding niet aan */
   background-position: top left; 
 
+
+    transition: transform 1s;
+
 }
 #user-input{
   border-radius: 10px;

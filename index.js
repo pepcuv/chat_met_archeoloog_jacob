@@ -96,7 +96,16 @@ document.addEventListener("DOMContentLoaded", () => {
       'Oh... Sien... Daar heb ik good times mee beleefd...<br><img class="chatInline" src="jufsien.png"> 😋',
       'Oh juf Sien...<br><img class="chatInline" src="jufsien.png">'
 
-    ]
+    ],
+    "australie":() => { 
+      document.body.style.transform = 'rotate(180deg)';
+
+      // Wacht 15 seconden en zet de website weer terug
+      setTimeout(function() {
+          document.body.style.transform = 'rotate(0deg)';
+      }, 15000); // 15000 milliseconden = 15 seconden
+      return  [ 'Australië... Wistje dat alles daar op zijn hoofd staat?' ]
+    }
 
   };
 
@@ -161,7 +170,10 @@ document.addEventListener("DOMContentLoaded", () => {
     drol:"kaka",
     kak:"kaka",
     sien: "jufsien",
-    verschuere: "jufsien"
+    verschuere: "jufsien",
+
+    // australie
+    australië: 'australie'
   };
   
   function appendMessage(text, isBot = false, name = "Jacob", time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })) {
