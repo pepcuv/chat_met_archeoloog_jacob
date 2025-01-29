@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Lijst met keywords en reacties
   const keywords = {
     telescoop: () =>  [
-      "Ah, de telscoop, een prachtig stuk van <strong>Verbiest</strong> zelf. Heel 🌟 <em>beautiful</em> 🌟 allemaal, maar op de zijkant is er iets speciaals... Ik ontdekte sterrenbeelden op de zijkant. Ik keek eens goed, en het bleek de <strong>Grote Beer</strong> te zijn. Maar 1 ster bleek wel zeer speciaal aangeduid... Misschien moeten jullie de <strong>naam</strong> en het <strong>kenmerk</strong> van die ster ontdekken... Oh, en ik hou van een vleugje 😄 <em>fun</em>, dus ik heb een kopie verstopt in een van de voorste vakjes van een persoon...",
+      "Ah, de telscoop, een prachtig stuk van <strong>Verbiest</strong> zelf. Heel 🌟 <em>beautiful</em> 🌟 allemaal, maar op de zijkant is er iets speciaals... Ik ontdekte sterrenbeelden op de zijkant. Ik keek eens goed, en het bleek de <strong>Grote Beer</strong> te zijn. Maar 1 ster bleek wel zeer speciaal aangeduid... Misschien moeten jullie eerst de <strong>naam</strong> en daarna het <strong>kenmerk</strong> van die ster ontdekken... Het kenmerk begint met de letter D. Oh, en ik hou van een vleugje 😄 <em>fun</em>, dus ik heb een kopie verstopt in een van de voorste vakjes van een persoon...",
     
-      "Ah, de <strong>telescope</strong>, zo'n prachtig ontwerp van <strong>Verbiest</strong> zelf. Echt 🌟 <em>beautiful</em>, moet ik zeggen, maar er is iets unieks aan de zijkant... Ik zag sterrenbeelden op de zijkant. Toen ik beter keek, zag ik dat het de <strong>Grote Beer</strong> was. Maar één ster was wel heel speciaal gemarkeerd... Misschien kunnen jullie de <strong>name</strong> en het <strong>kenmerk</strong> van die ster vinden... Oh, en ik ben dol op een beetje 😄 <em>fun</em>, dus ik heb een kopie verstopt in een van de voorste <strong>bakskes</strong> van iemand...",
+      "Ah, de <strong>telescope</strong>, zo'n prachtig ontwerp van <strong>Verbiest</strong> zelf. Echt 🌟 <em>beautiful</em>, moet ik zeggen, maar er is iets unieks aan de zijkant... Ik zag sterrenbeelden op de zijkant. Toen ik beter keek, zag ik dat het de <strong>Grote Beer</strong> was. Maar één ster was wel heel speciaal gemarkeerd... Misschien moeten jullie eerst de <strong>naam</strong> en daarna het <strong>kenmerk</strong> van die ster ontdekken... Het kenmerk begint met de letter D. Oh, en ik ben dol op een beetje 😄 <em>fun</em>, dus ik heb een kopie verstopt in een van de voorste <strong>bakskes</strong> van iemand...",
     
-      "Ah, wat een <strong>telescope</strong>, een meesterlijk werkstuk van <strong>Verbiest</strong> zelf. Truly 🌟 <em>beautiful</em>, maar op de zijkant zit iets bijzonders... Ik ontdekte sterrenbeelden langs de rand. Toen ik goed keek, herkende ik de <strong>Grote Beer</strong>. Maar één <strong>star</strong> was opvallend speciaal gemarkeerd... Misschien kunnen jullie de <strong>naam</strong> en het <strong>detail</strong> van die ster achterhalen... Oh, en ik houd van een touch of 😄 <em>fun</em>, dus ik heb een kopie verborgen in een van de voorste <strong>trays</strong> van een persoon..."
+      "Ah, wat een <strong>telescope</strong>, een meesterlijk werkstuk van <strong>Verbiest</strong> zelf. Truly 🌟 <em>beautiful</em>, maar op de zijkant zit iets bijzonders... Ik ontdekte sterrenbeelden langs de rand. Toen ik goed keek, herkende ik de <strong>Grote Beer</strong>. Maar één <strong>star</strong> was opvallend speciaal gemarkeerd... Misschien moeten jullie eerst de <strong>naam</strong> en daarna het <strong>kenmerk</strong> van die ster ontdekken... Het kenmerk begint met de letter D. Oh, en ik houd van een touch of 😄 <em>fun</em>, dus ik heb een kopie verborgen in een van de voorste <strong>trays</strong> van een persoon..."
     ]
     
 
@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     "juf sien": () => [
-      'Ah... Juf Sien... Een old vriendin van me.<br><img class="chatInline" src="jufsien.png"> 🥰',
-      'Oh... Sien... Daar heb ik good times mee beleefd...<br><img class="chatInline" src="jufsien.png"> 🥰',
+      'Ah... Juf Sien... Een old vriendin van me.<br><img class="chatInline" src="jufsien.png"> 😃',
+      'Oh... Sien... Daar heb ik good times mee beleefd...<br><img class="chatInline" src="jufsien.png"> 😋',
       'Oh juf Sien...<br><img class="chatInline" src="jufsien.png">'
 
     ]
