@@ -104,7 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(function() {
           document.body.style.transform = 'rotate(0deg)';
       }, 15000); // 15000 milliseconden = 15 seconden
-      return  [ 'Australië... Wistje dat alles daar op zijn hoofd staat?' ]
+      return  [ 'Australië... Wist je dat alles daar op zijn kop staat?',
+        'Australië... Prachtige streek. Wist je dat iedereen daar altijd ondersteboven staat?'
+       ]
     }
 
   };
